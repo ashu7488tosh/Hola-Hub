@@ -15,11 +15,13 @@ const io = connectToSocket(server);
 
 app.set("port", (process.env.PORT || 8000));
 
+const allowedOrigins = ["https://hola-hub-frontend.onrender.com"];
+
 app.use(cors({
-  origin: "https://hola-hub-frontend.onrender.com/",   // frontend
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  origin: allowedOrigins,
   credentials: true
 }));
+
 app.use(express.json({"limit": "40kb"}));
 app.use(express.urlencoded({"limit": "40kb", extended: true}));
 
