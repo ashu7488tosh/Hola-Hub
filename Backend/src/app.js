@@ -16,7 +16,7 @@ const io = connectToSocket(server);
 app.set("port", (process.env.PORT || 8000));
 
 app.use(cors({
-  origin: "https://hola-hub-backend.onrender.com",   // frontend
+  origin: "https://hola-hub-frontend.onrender.com/",   // frontend
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
