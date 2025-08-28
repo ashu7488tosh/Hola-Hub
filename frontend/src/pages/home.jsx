@@ -48,7 +48,7 @@ function HomeComponent() {
               <div className="meetContainer">
                 <div className="leftPanel">
                     <div>
-                        <h2>Providing Quality Video Call Just Like Quality Your Character !</h2>
+                        <h2>Providing Quality Video Call Just Like Quality Of Your Character !</h2>
 
                         <div style={{display: "flex", gap: "10px"}}>
                             <TextField onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined"></TextField>
